@@ -22,7 +22,7 @@ library(ggrepel)
 library(ComplexHeatmap)
 library(circlize)
 
-setwd('/Users/callu/OneDrive - University College London/Protocol/RNAseq/Claude/New_Results/Attempt_2/')
+setwd('setworkingdirectory')
 
 # Create GSEA output directory
 dir.create("GSEA_Results_v2", showWarnings = FALSE)
