@@ -2,7 +2,7 @@
 # Calculate stomach and colon signature scores from bulk RNA-seq TPM data
 
 # Set working directory
-setwd('C:/Users/callu/OneDrive - University College London/Protocol/RNAseq/BulkRNASeq')
+setwd('setworkingdirectory')
 
 # Load TPM data
 tpm_data <- read.delim('salmon.merged.transcript_tpm.tsv', stringsAsFactors = FALSE)
