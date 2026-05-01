@@ -1,4 +1,4 @@
-workdir= "/Users/callu/OneDrive - University College London/Methylation/ME2"
+workdir= "setworkingdirectory"
 setwd(workdir)
 
 library(ChAMP)
@@ -36,8 +36,8 @@ library("ggpubr")
 library("qqman")
 
 ####ChAMP Load in of data, this section will provide QC plots for both pre and post normalization
-Sample_Data <- read.csv("/Users/callu/OneDrive - University College London/Methylation/ME2/M2346_Oddy/IDATs/All Data/Sample_Data_noblood.csv")
-myImport <- champ.import("/Users/callu/OneDrive - University College London/Methylation/ME2/M2346_Oddy/IDATs/All Data", arraytype = "EPICv2")
+Sample_Data <- read.csv("setworkingdirectory/Sample_Data.csv")
+myImport <- champ.import("setworkingdirectory/IDATs/All Data", arraytype = "EPICv2")
 myLoad <-  champ.filter(beta = myImport$beta,
                         pd=myImport$pd,
                         detP=myImport$detP,
