@@ -4,7 +4,7 @@ library(ggplot2)
 library(dplyr)
 library(harmony)
 
-setwd("/Users/callu/OneDrive - University College London/Protocol/scRNA/")
+setwd("setdirectory")
 
 # 1. Load Data
 message("Loading Seurat object...")
