@@ -24,10 +24,10 @@ library(missMethyl)
 library(Unknownmanifest)
 
 # Set working directory (for outputs)
-setwd("/Users/callu/OneDrive - University College London/Methylation/ME2/")
+setwd("setworkingdirectory")
 
 # Define path to raw data
-data_path <- "/Users/callu/OneDrive - University College London/Methylation/ME2/M2346_Oddy/IDATs/All Data"
+data_path <- "setworkingdirectory/IDATs/All Data"
 
 # ============================================================================
 # 1. DATA IMPORT AND INITIAL QC
