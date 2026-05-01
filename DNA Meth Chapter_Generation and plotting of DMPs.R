@@ -822,9 +822,9 @@ cat("\n✅ COMPLETE! All DMP tables saved.\n")
 # STEP 7b: Calculate Beta Differences (Delta Beta)
 ############################################
 
-dmp_IM_vs_Gas <- read.csv("/Users/callu/OneDrive - University College London/Methylation/ME2/DMPs_IM_vs_Gastric.csv")
-dmp_Duo_vs_Gas <- read.csv("/Users/callu/OneDrive - University College London/Methylation/ME2/DMPs_Duodenal_vs_Gastric.csv")
-dmp_IM_vs_Duodenal <- read.csv("/Users/callu/OneDrive - University College London/Methylation/ME2/DMPs_IM_vs_Duodenal.csv")
+dmp_IM_vs_Gas <- read.csv("setdirectory/DMPs_IM_vs_Gastric.csv")
+dmp_Duo_vs_Gas <- read.csv("setdirectory/DMPs_Duodenal_vs_Gastric.csv")
+dmp_IM_vs_Duodenal <- read.csv("setdirectory/DMPs_IM_vs_Duodenal.csv")
 
 
 # 1. Get the original Beta values for the matched probes
