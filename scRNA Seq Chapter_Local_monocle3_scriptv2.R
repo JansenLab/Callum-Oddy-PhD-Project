@@ -14,7 +14,7 @@ library(monocle3)
 
 library(monocle3)
 
-setwd("C:/Users/callu/OneDrive - University College London/Protocol/scRNA")
+setwd("setdirectory")
 
 
 # Load the processed object from Myriad
@@ -51,7 +51,7 @@ plot_cells(cds,
 
 # Save with pseudotime added
 saveRDS(cds, "monocle3_pseudotime_final_cytotrace2node.rds")
-save_monocle_objects(cds=cds, directory_path = "C:/Users/callu/OneDrive - University College London/Protocol/scRNA")
+save_monocle_objects(cds=cds, directory_path = "setdirectory")
 
 
 
