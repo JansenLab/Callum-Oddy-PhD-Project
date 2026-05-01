@@ -23,7 +23,7 @@ library(anndataR)
 
 
 # Set working directory
-setwd("/Users/callu/OneDrive - University College London/Protocol/scRNA/")
+setwd("setdirectory")
 
 set.seed(1234)
 
