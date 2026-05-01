@@ -16,7 +16,7 @@ library(gridExtra)
 library(VennDiagram)
 library(ggpubr)
 
-setwd('/Users/callu/OneDrive - University College London/Protocol/RNAseq/Claude/New_Results/Attempt_2/')
+setwd('set working directory')
 
 # Color scheme
 color_palette <- c("Gastric" = "#C75A5A", "IM" = "#9370B8", "Duodenal" = "#6B8DB8")
@@ -28,8 +28,8 @@ patient_palette <- c("Patient3" = "#E69F00", "Patient4" = "#56B4E9", "Patient6" 
 
 cat("=== Loading Data ===\n\n")
 
-merged_counts_file <- "/Users/callu/OneDrive - University College London/Protocol/RNAseq/salmon.merged.gene_counts.tsv"
-sample_sheet <- "/Users/callu/OneDrive - University College London/Protocol/RNAseq/sample_metadata.csv"
+merged_counts_file <- "setworkingdirectory/salmon.merged.gene_counts.tsv"
+sample_sheet <- "setworkingdirectory/sample_metadata.csv"
 
 cts <- read.csv(merged_counts_file, sep="\t", header=TRUE, row.names=1)
 colData <- read.csv(sample_sheet, row.names=1)
@@ -800,7 +800,7 @@ library(ggplot2)
 library(dplyr)
 library(tibble)
 
-setwd('/Users/callu/OneDrive - University College London/Protocol/RNAseq/Claude/New_Results/Attempt_2/')
+setwd('setworkingdirectory')
 
 # ====================================================================
 # LOAD DEG RESULTS (Choose Simple or Paired model)
