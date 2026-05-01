@@ -1,6 +1,6 @@
 ###Illumina-EPICv2 Full Analysis
 
-workdir= "/Users/callu/OneDrive - University College London/Methylation/ME1"
+workdir= "setworkingdirectory"
 setwd(workdir)
 
 install.packages("ggsignif")
@@ -62,13 +62,13 @@ library("ggpubr")
 library("qqman")
 
 
-install.packages("C:/Users/callu/OneDrive - University College London/Methylation/ChAMP", repos = NULL, type = "source")
+install.packages("setdirectory/ChAMP", repos = NULL, type = "source")
 
 
 ### ChAMP
 #Check the CSV, the sentrix ID often gets converted into scientifc notation, and it needs to be in text, putting a single coma fixes.
-#this command isn't working at current: myLoad <- champ.load("/Users/callu/OneDrive - University College London/Methylation/207695700005", arraytype = "EPICv2")
-myImport <- champ.import("/Users/callu/OneDrive - University College London/Methylation/207695700005", arraytype = "EPICv2")
+#this command isn't working at current: myLoad <- champ.load("setdirectory/Methylation/207695700005", arraytype = "EPICv2")
+myImport <- champ.import("setdirectory/Methylation/207695700005", arraytype = "EPICv2")
 myLoad <-  champ.filter(beta = myImport$beta,
                           pd=myImport$pd,
                           detP=myImport$detP,
@@ -234,7 +234,7 @@ DMR.GUI(DMR=myDMRall, beta=myNorm, runDMP= TRUE, pheno=myLoad$pd$Sample_Type, ar
 #Minfi + DNAmarray can be used rather than EPICv2
 #######################
 
-targets <- read.metharray.sheet("C:/Users/callu/OneDrive - University College London/Methylation/207695700005")
+targets <- read.metharray.sheet("setdirectory/Methylation/207695700005")
 RGSet <- read.metharray.exp(targets = targets,force=TRUE,extended=TRUE)
 # setting the right array type and annotation will do the work:
 RGSet@annotation <- c(array = "IlluminaHumanMethylationEPICv2", annotation = "20a1.hg38")
