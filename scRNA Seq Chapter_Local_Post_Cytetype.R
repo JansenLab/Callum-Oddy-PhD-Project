@@ -15,7 +15,7 @@ library(viridis)
 library(scales)
 
 # Set working directory
-setwd("C:/Users/callu/OneDrive - University College London/Protocol/scRNA")
+setwd("setdirectory")
 
 # Create output directories
 dir.create("figures/cytetype_analysis", recursive = TRUE, showWarnings = FALSE)
