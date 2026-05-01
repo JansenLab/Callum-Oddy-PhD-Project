@@ -2,7 +2,7 @@
 #I had only plots, with no scripts or raw data, to attempt to replicate this students work.
 
 
-workdir= "/Users/callu/OneDrive - University College London/Methylation/ME2"
+workdir= "setdirectory"
 setwd(workdir)
 
 library(ChAMP)
@@ -40,8 +40,8 @@ library("ggpubr")
 library("qqman")
 
 ####ChAMP Load in of data, this section will provide QC plots for both pre and post normalization
-Sample_Data <- read.csv("/Users/callu/OneDrive - University College London/Methylation/ME2/M2346_Oddy/IDATs/All Data/Sample_Data_noblood.csv")
-myImport <- champ.import("/Users/callu/OneDrive - University College London/Methylation/ME2/M2346_Oddy/IDATs/All Data", arraytype = "EPICv2")
+Sample_Data <- read.csv("setdirectory/IDATs/All Data/Sample_Data.csv")
+myImport <- champ.import("setdirectory/IDATs/All Data", arraytype = "EPICv2")
 myLoad <-  champ.filter(beta = myImport$beta,
                         pd=myImport$pd,
                         detP=myImport$detP,
@@ -409,8 +409,8 @@ ggsave("SVD_heatmap_continuous.pdf", p_svd, width = 10, height = 6)
 ggsave("SVD_heatmap_discrete.pdf", p_svd_discrete, width = 10, height = 6)
 
 
-#########
-#########
+
+###########################################
 # Now, we want to do some global views of the DNA methylation,
 #dataset. This helps just see what the data looks like, where patterns are.
 ############################################
