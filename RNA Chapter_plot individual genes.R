@@ -1,7 +1,7 @@
 ###############################################################################
 # RNA-seq DESeq2 Analysis + Correct Gene Plotting (Wald + VST)
 ###############################################################################
-setwd('/Users/callu/OneDrive - University College London/Protocol/RNAseq/Claude/New_Results/Attempt_2/Individual Plots & Gene Signatures')
+setwd('setworkingdirection')
 
 
 suppressPackageStartupMessages({
@@ -26,8 +26,8 @@ patient_palette <- c("Patient3" = "#E69F00",
 # ============================================================================
 cat("=== Loading Data ===\n\n")
 
-merged_counts_file <- "/Users/callu/OneDrive - University College London/Protocol/RNAseq/salmon.merged.gene_counts.tsv"
-sample_sheet <- "/Users/callu/OneDrive - University College London/Protocol/RNAseq/sample_metadata.csv"
+merged_counts_file <- "setworkingdirectory/salmon.merged.gene_counts.tsv"
+sample_sheet <- "setworkingdirectory/sample_metadata.csv"
 
 cts <- read.csv(merged_counts_file, sep="\t", header=TRUE, row.names=1)
 colData <- read.csv(sample_sheet, row.names=1)
@@ -549,8 +549,8 @@ cat("Intestinal signature genes:", length(intestinal_signature), "\n\n")
 vst_mat <- assay(vsd)  # This should be from your existing script
 
 # Load metadata
-merged_counts_file <- "/Users/callu/OneDrive - University College London/Protocol/RNAseq/salmon.merged.gene_counts.tsv"
-sample_sheet <- "/Users/callu/OneDrive - University College London/Protocol/RNAseq/sample_metadata.csv"
+merged_counts_file <- "setworkingdirectory/salmon.merged.gene_counts.tsv"
+sample_sheet <- "setworkingdirectory/sample_metadata.csv"
 
 colData <- read.csv(sample_sheet, row.names=1)
 
