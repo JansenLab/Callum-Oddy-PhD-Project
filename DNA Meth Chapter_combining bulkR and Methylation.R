@@ -1,4 +1,4 @@
-workdir= "/Users/callu/OneDrive - University College London/Methylation/ME2"
+workdir= "setdirectory"
 setwd(workdir)
 
 library(ChAMP)
@@ -36,8 +36,8 @@ library("ggpubr")
 library("qqman")
 
 ####ChAMP Load in of data, this section will provide QC plots for both pre and post normalization
-Sample_Data <- read.csv("/Users/callu/OneDrive - University College London/Methylation/ME2/M2346_Oddy/IDATs/All Data/Sample_Data_noblood.csv")
-myImport <- champ.import("/Users/callu/OneDrive - University College London/Methylation/ME2/M2346_Oddy/IDATs/All Data", arraytype = "EPICv2")
+Sample_Data <- read.csv("setdirectory/IDATs/All Data/Sample_Data.csv")
+myImport <- champ.import("setdirectory/IDATs/All Data", arraytype = "EPICv2")
 myLoad <-  champ.filter(beta = myImport$beta,
                         pd=myImport$pd,
                         detP=myImport$detP,
@@ -295,9 +295,9 @@ library(tidyr)
 library(stringr)
 
 # Load the RNA-seq data
-DEG_IM_vs_Gastric <- read.csv("/Users/callu/OneDrive - University College London/Protocol/RNAseq/Claude/New_Results/Attempt_2/Simple_DEG_IM_vs_Gastric.csv", stringsAsFactors = FALSE)
-DEG_Duodenal_vs_IM <- read.csv("/Users/callu/OneDrive - University College London/Protocol/RNAseq/Claude/New_Results/Attempt_2/Simple_DEG_Duodenal_vs_IM.csv", stringsAsFactors = FALSE)
-DEG_Duodenal_vs_Gastric <- read.csv("/Users/callu/OneDrive - University College London/Protocol/RNAseq/Claude/New_Results/Attempt_2/Simple_DEG_Duodenal_vs_Gastric.csv", stringsAsFactors = FALSE)
+DEG_IM_vs_Gastric <- read.csv("setdirectory/Simple_DEG_IM_vs_Gastric.csv", stringsAsFactors = FALSE)
+DEG_Duodenal_vs_IM <- read.csv("setdirectory/Simple_DEG_Duodenal_vs_IM.csv", stringsAsFactors = FALSE)
+DEG_Duodenal_vs_Gastric <- read.csv("setdirectory/Simple_DEG_Duodenal_vs_Gastric.csv", stringsAsFactors = FALSE)
 
 # NOTE: We already have dmp_IM_vs_Gas, dmp_Duo_vs_Gas, dmp_IM_vs_Duo in memory with Delta_Beta calculated
 
@@ -661,7 +661,7 @@ library(tidyr)
 library(openxlsx)
 
 # Set working directory
-workdir <- "/Users/callu/OneDrive - University College London/Methylation/ME2"
+workdir <- "setdirectory"
 setwd(workdir)
 
 cat("\n=== LOADING DATA ===\n")
