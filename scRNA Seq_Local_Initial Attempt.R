@@ -11,7 +11,7 @@ library(EnhancedVolcano)
 library(pheatmap)
 
 # Set working directory
-setwd("/Users/callu/OneDrive - University College London/Protocol/scRNA/")
+setwd("setdirectory")
 
 set.seed(1234)
 
@@ -685,7 +685,7 @@ save_lineage_violin_plots <- function(seurat_obj, lineage_markers,
 }
 
 # Set working directory and run analysis
-setwd("/Users/callu/OneDrive - University College London/Protocol/scRNA/")
+setwd("setdirectory")
 
 # Usage with your specific setup:
 
